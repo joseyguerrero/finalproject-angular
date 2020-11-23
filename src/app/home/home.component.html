@@ -1,0 +1,41 @@
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Welcome!</h1>
+            <br>
+            <p> Hi! I'm Chachi. I’m a highly motivated and resourceful interpreneur, 
+                and i've been at it for the past 15+ years. 
+                During my years of experience, I've been able to focus in the fields 
+                I love most: Event production, Marketing, Web Design & Development and my biggest 
+                passion, DJing. When I'm not making dreams come to life, I'm mostly spending time 
+                with my beautiful kitty Purrl, or searching for the next big adventure with my partner 
+                in crime.</p>
+            
+            <p> I hope I'm able to help you find what you're looking for!</p>
+            
+        </div>
+    </div> 
+
+</section>
+
+
+<div class="top-bar">
+    <h1>My favorite Artists!</h1>
+    <br>
+    <p> Here's a list of some of my most influential artists. I've had the pleasure of working with some of them, too and hope I can meet them all one day.</p>
+</div>
+
+<!--Add item Section-->
+
+<section class="add-artist-section">
+    <div class="add-artist-container">
+        <!-- TODO Add Angular Form for adding info -->
+        <app-add-artist-form style="padding:20px;" (formSubmit) = 'addItem($event)'></app-add-artist-form>
+    </div>
+</section>
+
+<hr style="margin-top:0px;">
+<app-artist-item-list [artistItems] = "artistItems" (delete) = "deleteItem($event)" (update) = "updateItem($event)"></app-artist-item-list>
+
+
+
