@@ -14,6 +14,10 @@ import { ArtistItemListComponent } from './artist-item-list/artist-item-list.com
 import { ArtistItemCardComponent } from './artist-item-list/artist-item-card/artist-item-card.component';
 import { EditItemModalComponent } from './edit-item-modal/edit-item-modal.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthModule } from './auth/auth.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import { FormsModule } from '@angular/forms';
     AddArtistFormComponent,
     ArtistItemListComponent,
     ArtistItemCardComponent,
-    EditItemModalComponent
+    EditItemModalComponent,
+   
+  
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,11 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     SharedModule,
     YouTubePlayerModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    AuthModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
