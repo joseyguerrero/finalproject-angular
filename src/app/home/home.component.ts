@@ -33,6 +33,5 @@ export class HomeComponent implements OnInit {
             this.artistItems[this.artistItems.indexOf(updateEvent.old)] = updateEvent.new;
             
   }
-
-
+  
 }

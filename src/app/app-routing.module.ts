@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { from } from 'rxjs';
+import { Observable } from 'rxjs';
 import { MusicComponent } from './music/music.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+
 
 
 const routes: Routes = [
